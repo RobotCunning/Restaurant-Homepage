@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 75, 172);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width:95%;
+    height:100vh;
+}
+
+.homepage{
+    display: grid;
+    grid-template-rows: 0.75fr 4fr 0.5fr;
+    background-color:  rgb(242, 250, 255);
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    grid-column: 2/3;
+    color: rgb(0, 75, 172);
+}
+.header {
+    grid-row:1/2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    width: 55%;
+    padding: 10px;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+    border-radius: 6px;
+    border: solid 4px rgb(177, 225, 255);
+    background-image: url('Blossom\ picture\ low\ res.jpg');
+    /*background-size: 100%;
+    /*background-color: ;*/
+}
+
+.about, .menuCard, .contactCard {
+    height: 100%;
+    word-spacing: 2px;
+    text-align: center;
+    font-size: large;
+    grid-row:2/3;
+    grid-column: 2/3;
+    color: rgb(0, 75, 172);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+/* .contactCard{
+    height:100%;
+    grid-row:2/3;
+    grid-column: 2/3;
+}*/
+.tab {
+    font-size: larger;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab:hover {
+    transform: scale(1.1);
+    color: rgb(251, 179, 255);
+}
+.submitBtn:hover{
+    box-shadow: 1px 2px 2px rgb(251, 179, 255);
+    cursor: pointer;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+input, textarea {
+    padding: 5px;
+    margin:5px;
+    background-color: white;
+    /*background-color: rgba(255, 254, 254, 0.856);*/
+    border: none;
+}
+textarea {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: vertical;
+    min-height: 40px;
+}
+
+
+.messageBox {
+    height:100px;
+    width: 150px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-row: 3/4;
+}
